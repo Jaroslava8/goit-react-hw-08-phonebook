@@ -24,7 +24,7 @@ export default function FormAddContact() {
           toast.error('Error with token.');
           return;
         case 404:
-          console.log('Not contacts.');
+          console.log('No contacts');
           return;
         case 500:
           toast.error('Something went wrong. Please try again later.');
@@ -60,7 +60,7 @@ export default function FormAddContact() {
 
   useEffect(() => {
     if (isSuccess) {
-      toast.success('You added contact.');
+      toast.success('The contact has been added');
       return;
     }
 
@@ -89,7 +89,10 @@ export default function FormAddContact() {
   };
 
   return (
-    <form className={styles.body} onSubmit={formik.handleSubmit}>
+    <form className={styles.body} 
+    onSubmit={formik.handleSubmit}
+    
+    >
       <p>
         {formik.values.name === ''
           ? ''

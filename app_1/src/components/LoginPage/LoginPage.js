@@ -28,7 +28,7 @@ export default function LoginPage() {
         case 400:
           return toast.error('Incorrect email or password.');
         default:
-          return toast.error('Unknworn error.');
+          return toast.error('Unknown error.');
       }
     }
   }, [isError, isSuccess]);

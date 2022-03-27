@@ -23,7 +23,7 @@ export default function Contacts() {
   useEffect(() => {
     if (location.search !== '') return;
 
-    history.push({ ...location, search: 'mode=read' });
+    history.push({ ...location, search: '' });
   }, [history, location]);
 
   useEffect(() => {
