@@ -26,6 +26,12 @@
     background-repeat: no-repeat;
    
 }
+.bodyForm{
+    background-image: url(../Navigation//phonebook.jpg);
+  
+    padding-top: 50px;
+    background-repeat: no-repeat;  
+}
 .input{
   border-top: none;
   border-color: #2196F3;

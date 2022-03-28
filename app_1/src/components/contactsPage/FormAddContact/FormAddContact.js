@@ -89,7 +89,7 @@ export default function FormAddContact() {
   };
 
   return (
-    <form className={styles.body} 
+    <form className={styles.bodyForm} 
     onSubmit={formik.handleSubmit}
     
     >
